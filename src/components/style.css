@@ -38,6 +38,8 @@ html {
   grid-template-columns: 1fr;
   justify-content: space-around;
   align-items: flex-start;
+  border: 1px solid red;
+  border-radius: 10px;
 }
 
 .card-container img {
@@ -123,15 +125,16 @@ html {
   float: right;
   margin: 5px 0 0;
   border: 1.5px solid red;
-  border-radius: 20%;
+  border-radius: 20px;
   padding: 5px 10px;
   cursor: pointer;
-  color: red;
+  color: white;
+  background: red;
 }
 
 .card-tag:hover {
-  background: red;
-  color: white;
+  background: white;
+  color: red;
 }
 
 .card-media {
@@ -156,11 +159,6 @@ html {
     grid-gap: 50px;
     justify-content: space-around;
   }
-}
-
-.card-container {
-  border: 1px solid red;
-  border-radius: 10px;
 }
 
 /* ---------- Button styles ------------------ */
