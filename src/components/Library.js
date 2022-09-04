@@ -7,7 +7,7 @@ import Navbar from "./Navbar.js";
 const uniqueList = [
   ...new Set(
     Book.map((curElem) => {
-      return curElem.category;
+      return curElem.language;
     })
   ),
   "All",
@@ -19,14 +19,14 @@ const Library = () => {
   const [bookData, setBookData] = useState(Book);
   const [bookList, setBookList] = useState(uniqueList);
 
-  const filterItem = (category) => {
-    if (category === "All") {
+  const filterItem = (language) => {
+    if (language === "All") {
       setBookData(Book);
       return;
     }
 
     const updatedList = Book.filter((curElem) => {
-      return curElem.category === category;
+      return curElem.language === language;
     });
 
     setBookData(updatedList);
