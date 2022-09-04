@@ -49,9 +49,10 @@ html {
   background-color: #fff;
   padding: 30px;
   position: relative;
-
   box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
   z-index: 1;
+  border: 1px solid #fff;
+  border-radius: 5%;
 }
 
 .card-body {
@@ -121,14 +122,16 @@ html {
 .card-tag {
   float: right;
   margin: 5px 0 0;
-  border: 1px solid #aaa;
+  border: 1.5px solid red;
+  border-radius: 20%;
   padding: 5px 10px;
   cursor: pointer;
+  color: red;
 }
 
 .card-tag:hover {
-  background: #aaa;
-  color: black;
+  background: red;
+  color: white;
 }
 
 .card-media {
@@ -153,6 +156,11 @@ html {
     grid-gap: 50px;
     justify-content: space-around;
   }
+}
+
+.card-container {
+  border: 2px solid red;
+  border-radius: 5%;
 }
 
 /* ---------- Button styles ------------------ */
